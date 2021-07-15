@@ -10,15 +10,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        System.out.print("Введите полный путь к файлу c координатами четырехугольника: ");
+        /*System.out.print("Введите полный путь к файлу c координатами четырехугольника: ");
         Scanner scan = new Scanner(System.in);
         String path1 = scan.nextLine();
         System.out.print("Введите полный путь к файлу c координатами точек: ");
-        String path2 = scan.nextLine();
+        String path2 = scan.nextLine();*/
 
 
-        float[][] vert = fileToMass(path1);
-        float[][] point = fileToMass(path2);
+        float[][] vert = fileToMass(args[0]);
+        float[][] point = fileToMass(args[1]);
         for (int i = 0; i < point.length; i++)
             System.out.print(pointPosition(vert, point[i][0],point[i][1]) + "\n");
     }
