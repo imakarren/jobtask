@@ -10,13 +10,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        /*System.out.print("Введите полный путь к файлу c координатами четырехугольника: ");
-        Scanner scan = new Scanner(System.in);
-        String path1 = scan.nextLine();
-        System.out.print("Введите полный путь к файлу c координатами точек: ");
-        String path2 = scan.nextLine();*/
-
-
         float[][] vert = fileToMass(args[0]);
         float[][] point = fileToMass(args[1]);
         for (int i = 0; i < point.length; i++)
