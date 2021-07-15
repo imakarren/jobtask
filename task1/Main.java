@@ -11,9 +11,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        //System.out.print("Введите полный путь к файлу :");
-        //Scanner scan = new Scanner(System.in);
-        //args[0] = scan.nextLine();
         int[] buf = fileToSortedMass(args[0]);
 
         String pattern = "#0.00";
